@@ -1,0 +1,691 @@
+ /* couleur du site #f7a191 orange*/
+/* couleur des hover #00a395 vert*/
+/* couleur du footer #2e2d2d */
+
+header {
+    background-image: url('img/imgDuHeader.jpg');
+    background-size: cover;
+    height: 200px; /* Ajustez cette valeur en fonction de la taille souhaitée */
+  }
+
+
+  header {
+    background-image: url('img/imgDuHeader.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 800px; /* Ajustez cette valeur en fonction de la taille souhaitée */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* le message sur le header */
+  .header-content {
+    text-align: left;
+    color: #ffffff; /* Couleur du texte */
+    font-size: xx-large;
+  }
+  
+  .logo {
+    width: 60px; /* Ajustez cette valeur en fonction de la taille du logo */
+    margin-bottom: -10px;
+  }
+  
+  h1 {
+    font-size: 40px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le titre */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le texte */
+    margin-bottom: 20px;
+  }
+  
+  .reserve-button {
+    background-color: #00a395; /* Couleur de fond du bouton */
+    color: #ffffff; /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le texte du bouton */
+  }
+
+  .reserve-button:hover{
+    color: #00a395;
+    background-color: transparent;
+    border: 1px solid #00a395;
+  }
+
+  
+  /* ma navbar  */
+  .navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    z-index: 999;
+  }
+  
+  .logo img {
+    width: 350%;
+    height: 50%; /* Ajustez cette valeur en fonction de la taille de votre logo */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 50px;
+  }
+
+  .navbar-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .contact-btn {
+    background-color: #f7a191;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border-radius: 0px;
+    text-decoration: none;
+  }
+  
+  .contact-btn:hover {
+    background-color: #00a395;
+  }
+  
+
+
+  /* mon boutton en dessous du header */
+
+  .button-container {
+    text-align: center;
+    margin-top: -40px; /* Ajustez cette valeur pour définir l'espace souhaité entre l'en-tête et le bouton */
+    
+  }
+  
+  .round-button {
+    display: inline-block;
+    width: 80px; /* Ajustez cette valeur pour définir la taille du bouton */
+    height: 80px; /* Ajustez cette valeur pour définir la taille du bouton */
+    background-color: #ffffff; /* Couleur de fond du bouton */
+    border-radius: 50%; /* Pour rendre le bouton rond */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre du bouton */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 8px; /* Largeur de la flèche */
+    height: 8px; /* Hauteur de la flèche */
+    background-color: #000000; /* Couleur de la flèche */
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .round-button:hover .arrow-down {
+    transform: translate(-50%, -50%) rotate(45deg) translateY(4px); /* Animation de la flèche lors du survol */
+  }
+  
+
+
+  /* la section de card apres le header */
+  .cards-section {
+    position: relative;
+    height: 400px; /* Ajustez cette valeur en fonction de la taille souhaitée */
+    background-image: url('background-image.jpg'); /* Image de fond */
+    background-size: cover;
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Ajustez cette valeur en fonction de la largeur souhaitée pour les cartes */
+    height: 200px; /* Ajustez cette valeur en fonction de la hauteur souhaitée pour les cartes */
+    background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond semi-transparente des cartes */
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    background-color: rgb(62, 242, 245); /* Couleur de fond opaque des cartes lors du survol */
+  }
+  
+  .card img {
+    width: 100%; /* Ajustez cette valeur en fonction de la largeur souhaitée pour les images */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-caption {
+    display: none;
+    text-align: center;
+    color: #000000; /* Couleur du texte de la légende */
+  }
+  
+  .card:hover .card-caption {
+    display: block;
+  }
+  
+  .card-caption h3 {
+    font-size: 18px; /* Ajustez cette valeur en fonction de la taille souhaitée pour les titres de la légende */
+    margin-bottom: 10px;
+  }
+  
+  .card-caption p {
+    font-size: 14px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le texte de la légende */
+  }
+  
+
+  /* css de la 2eme SECTION */
+
+  .text-image-section {
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+  }
+  
+  .text-content {
+    width: 70%;
+    padding: 20px;
+    /* flex-direction: column; */
+  }
+
+  .contenair{
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .text-content h2 {
+    font-size: 24px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le titre */
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 18px; /* Ajustez cette valeur en fonction de la taille souhaitée pour la description */
+    margin-bottom: 20px;
+  }
+  
+  .text-content form {
+    margin-bottom: 20px;
+  }
+  
+  .text-content input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #070707; /* Couleur de la bordure du champ de texte */
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* 3eme Section */
+
+  section{
+    display: flex;
+  }
+
+  section .rdv{
+    display: flex;
+    text-align: center;
+  }
+
+
+
+  .texte-reservation-massage{
+    background-color: #f7a191;
+  }
+
+  .texte-reservation-massage h1{
+    color: white;
+    text-align: center;
+    margin: 0 10%;
+    margin-left: 40px;
+  }
+/* ici tout le css pour le boutton */
+  .button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10% 30%;
+  }
+
+  .button a:hover{
+    color: #ffffff;
+    background-color: #f4836f;
+  }
+
+    /* 4eme Section */
+
+    .text-image-section4 {
+      display: flex;
+      align-items: center;
+      margin: 0 10%;
+    }
+    
+    .text-content4 {
+      width: 50%;
+      padding: 20px;
+    }
+
+    hr{
+      width: 20%;
+      color: pink;
+    }
+    
+    .text-content h2 {
+      font-size: 50px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le titre */
+      margin-bottom: 10px;
+    }
+    
+    .text-content p {
+      font-size: 30px; /* Ajustez cette valeur en fonction de la taille souhaitée pour la description */
+      margin-bottom: 20px;
+    }
+    
+    .text-content form {
+      margin-bottom: 20px;
+    }
+    
+    .text-content input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #070707; /* Couleur de la bordure du champ de texte */
+    }
+    
+    .image-container4 {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .image-container4 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* 5eme section j'ai juste repris cette parti du precedent code de la section cads */
+
+    .cards-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card5 {
+      width: 200px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s ease-in-out; /*  permet de définir une transition fluide lorsqu'un changement est appliqué
+       à la propriété box-shadow d'un élément. 
+      La transition sera effectuée sur une durée de 0.3 secondes, 
+      avec une accélération progressive au début et à la fin de la transition grâce à la fonction ease-in-out
+      
+      Cette transition est souvent utilisée pour créer des effets d'animation subtils lors du survol ou de l'interaction avec un élément.
+       Dans ce cas spécifique, il est appliqué sur la classe .card5 pour ajouter une ombre lors du survol de la carte,
+        donnant ainsi un effet visuel agréable et engageant pour l'utilisateur.*/
+    }
+    
+    .card5:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10%;
+    }
+    
+    .card5 img {
+      width: 50%;
+      height: auto;
+      border-radius: 25px;
+    }
+    /* je ne comprend pas pourquoi mon texte ne s'affiche meme pas */
+    .card5 h3{
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .card5 p {
+      color: #000000;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+
+
+    /* 6eme section */
+.text-content7{
+  text-align: center;
+  font-size: x-large;
+}
+    /* 7eme section */
+
+    .text-image-section7 {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .card-container7 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card7 {
+      width: 300px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .card7:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10%;
+    }
+    
+    .card7 img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .card-content h3 {
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .card-content p {
+      color: #000000;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    .card-content .button {
+      display: inline-block;
+      background-color: #ff0066;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .card-content .button:hover {
+      background-color: #00cc66;
+    }
+    
+
+    
+
+    /* 8eme section */
+
+
+
+    /* 9eme section */
+
+    .sec9{
+      display: flexs;
+    }
+    
+    .text-content9 hr {
+      border: none;
+      border-top: 2px solid #000000;
+      width: 50px;
+      margin: 0 auto;
+    }
+    
+    .profile-container9 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .profile-card9 {
+      text-align: center;
+      margin: 10px;
+    }
+
+    
+.profile-card9 .profile-pic::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); */
+  z-index: 2;
+}
+    
+    .profile-card9 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-card9 img:hover{
+      width: 100px;
+      height: 250px;
+      margin-bottom: 10px;
+    }
+    
+    .profile-card9 h3 {
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* mon footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2e2d2d;
+    padding: 20px;
+    color: #ffffff;
+    /* margin: 10 -30px; */
+
+  }
+  
+  .footer-section {
+    flex-basis: 25%;
+    padding: 0px;
+  }
+  
+  .footer-section h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-left: 5px solid pink;
+    padding-left: 5px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffffff;
+    font-size: larger;
+  }
+  
+  .footer-section ul li a:hover span {
+    color: #ffffff;
+    font-size: larger;
+  }
+  
+  .footer-section .contact-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  form button{
+    background-color: #f7a191;
+    color: white;
+    padding: 7px 43px;
+  }
+
+  form button:hover{
+    background-color: #00cc66;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* pour l'abonnement */
+  input{
+    background-color:transparent;
+    color:gray;
+  }
+
+  /* pour le copyright */
+  .footer-section p {
+    font-size: 14px;
+    color: #888888;
+  }
+  
+  .footer-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .foot{
+    color: rgb(93, 93, 93);
+    width: 80%;
+
+  }
+
+  span{
+    transform: translate(transparent);
+    color: transparent;
+  }
+
+
+  
+
+
+
+  
+/* pour mon boutton retout en haut de pages */
+.return {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 999;
+  background-color: #f7a191;
+}
+
+.return:hover {
+  color: white;
+  background-color: #00a395;
+  font-size: large;
+}
+
+
+.return a:hover {
+  color: white;
+  background-color: #00a395;
+  font-size: large;
+}
+
+.return a {
+  color:#453e3e;
+  text-decoration: none;
+  background-color: #f7a191;
+}
+
+.return a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* test de responsivité a voir par la suite */
+

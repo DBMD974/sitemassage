@@ -166,120 +166,18 @@ header {
       
 
 
+      /* corp de la page article */
 
+.corp{
+  margin: 0 10%;
+  text-align: center;
 
+}
 
-      
-  /* la section de card apres le header */
-  .cards-section {
-    position: relative;
-    height: 400px; /* Ajustez cette valeur en fonction de la taille souhaitée */
-    background-image: url('background-image.jpg'); /* Image de fond */
-    background-size: cover;
-    display: flex;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px; /* Ajustez cette valeur en fonction de la largeur souhaitée pour les cartes */
-    height: 200px; /* Ajustez cette valeur en fonction de la hauteur souhaitée pour les cartes */
-    background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond semi-transparente des cartes */
-    border-radius: 5px;
-    margin: 20px;
-    padding: 20px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    background-color: rgb(62, 242, 245); /* Couleur de fond opaque des cartes lors du survol */
-  }
-  
-  .card img {
-    width: 100%; /* Ajustez cette valeur en fonction de la largeur souhaitée pour les images */
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .card-caption {
-    display: none;
-    text-align: center;
-    color: #000000; /* Couleur du texte de la légende */
-  }
-  
-  .card:hover .card-caption {
-    display: block;
-  }
-  
-  .card-caption h3 {
-    font-size: 18px; /* Ajustez cette valeur en fonction de la taille souhaitée pour les titres de la légende */
-    margin-bottom: 10px;
-  }
-  
-  .card-caption p {
-    font-size: 14px; /* Ajustez cette valeur en fonction de la taille souhaitée pour le texte de la légende */
-  }
-  
-
-
-
-  /* pour mon petit bloc contenant les img */
-
-  .card{
-    border: 2px solid #888888;
-    height: 500px;
-
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 1px solid grey;
-    /* padding-bottom: 3%; */
-  }
-  
-  .left-text, .right-text {
-    flex: 1;
-  }
-  
-  .image-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image {
-    max-width: 100px;
-    margin-right: 10px;
-  }
-    
-
-
-  .right-text{
-    text-align: right;
-    display: flex;
-  }
-
-
-
-  /* div image */
-  .image{
-    width: 100px;
-    height: 100px;
-  }
-
-
-
-
-
-
-
-
-
-
-
+.articleimage{
+  width: 80%;
+  height: 300px;
+}
 
 
 

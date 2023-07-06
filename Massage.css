@@ -69,6 +69,11 @@ header {
     padding: 10px 0px;
     z-index: 999;
   }
+
+  .navbar.scrolled {
+    background-color: gray;
+}
+
   
   .logo img {
     width: 350%;

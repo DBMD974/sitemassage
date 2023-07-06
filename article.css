@@ -22,7 +22,7 @@ header {
   
   /* le message sur le header */
   .header-content {
-    text-align: left;
+    text-align: center;
     color: #ffffff; /* Couleur du texte */
     font-size: xx-large;
   }
@@ -243,6 +243,8 @@ header {
 
 
 
+
+
   /* mon footer */
 
   footer {
@@ -265,6 +267,8 @@ header {
     color: #ffffff;
     font-size: 25px;
     margin-bottom: 10px;
+    border-left: 5px solid pink;
+    padding-left: 5px;
   }
   
   .footer-section ul {
@@ -282,10 +286,10 @@ header {
   }
   
   .footer-section ul li a:hover {
-    color: #f7a191;
+    color: #ffffff;
     font-size: larger;
   }
-
+  
   .footer-section ul li a:hover span {
     color: #ffffff;
     font-size: larger;
@@ -335,4 +339,8 @@ header {
     width: 80%;
 
   }
-  
+
+  span{
+    transform: translate(transparent);
+    color: transparent;
+  }

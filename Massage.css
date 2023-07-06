@@ -229,7 +229,7 @@ header {
   }
 
   .contenair{
-    flex-direction: column;
+    /* flex-direction: column; */
     display: flex;
   }
   
@@ -239,12 +239,19 @@ header {
   }
   
   .text-content p {
-    font-size: 18px; /* Ajustez cette valeur en fonction de la taille souhaitée pour la description */
+    font-size: 25px; /* Ajustez cette valeur en fonction de la taille souhaitée pour la description */
     margin-bottom: 20px;
+  
   }
   
   .text-content form {
     margin-bottom: 20px;
+  }
+
+
+  .contenair ul li{
+    list-style: none;
+    display: flex;
   }
   
   .text-content input {

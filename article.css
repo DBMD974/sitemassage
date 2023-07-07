@@ -81,6 +81,10 @@ header {
     list-style: none;
     display: flex;
   }
+
+  .navbar.scrolled {
+    background-color: #2d2c2b;
+}
   
   .navbar-links li {
     margin-left: 50px;

@@ -70,6 +70,10 @@ header {
     padding: 10px 0px;
     z-index: 999;
   }
+
+  .navbar.scrolled {
+    background-color: #2d2c2b;
+}
   
   .logo img {
     width: 350%;
